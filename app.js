@@ -17,6 +17,8 @@ app.set('view engine', 'ejs')
 //set public folder
 app.use(express.static(path.join(__dirname, 'public')))
 
+//Set local variables
+app.locals.errors = null;
 //bodyparser
 app.use(bodyparser.urlencoded({ extended: true }))
 
